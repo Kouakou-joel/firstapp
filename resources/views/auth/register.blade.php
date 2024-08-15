@@ -8,7 +8,7 @@
 
     <div class="row">
         <div class="col-md-6 mx-auto">
-            <h1 class="text-center text-muted mb-3 mt-5">Register account</h1>
+            <h1 class="text-center text-muted mb-3 mt-5">Register </h1>
             <p class="text-center text-muted mb-5">Create an account if your don't have one.</p>
 
             <form method="POST"  action="{{ route('register') }}" class="row g-3" id="form-register">
