@@ -69,11 +69,20 @@ $('#register-user').click(function() {
         // alert('data-ok');
 
         var res = emailExistjs(email);
-        $(res != "exist") ?  $('form-register').submit()
-             :   $('#email').addClass('is-invalid').removeClass('is-valid');
-                $('#error-register-email').text("This email address is already used!");
 
+        if(res !== "exist"){
+             $('#form-register').submit();
 
+        }else{
+
+            $('#email').addClass('is-invalid');
+            $('#email').removeClass('is-valid');
+            $('#error-register-email').text("This email address is already used!");
+
+        }
+        // $(res != "exist") ?  $('form-register').submit()
+        //      :   ($('#email').addClass('is-invalid').removeClass('is-valid');
+        //         $('#error-register-email').text("This email address is already used!"));
 
 
     } else {
